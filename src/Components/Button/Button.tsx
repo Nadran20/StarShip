@@ -5,6 +5,7 @@ export interface buttonProps {
     text: string;
     iconPath?: string;
     color: string;
+    onClick?: () => void;
 }
 
 export interface iconProps {
@@ -15,7 +16,7 @@ const Icon = ({iconPath}: iconProps) => (
     <img src={iconPath} alt={'icon'} className={'button-icon'}/>
 )
 
-export const Button = ({text, iconPath, color}: buttonProps) => {
+export const Button = ({text, iconPath, color, onClick}: buttonProps) => {
     return (
         <div>
             <MIU_BUTTON
@@ -29,6 +30,7 @@ export const Button = ({text, iconPath, color}: buttonProps) => {
                     fontSize: '20px',
                 }}
                 className={'button'}
+                onClick={onClick}
             >
                 {text}
             </MIU_BUTTON>
