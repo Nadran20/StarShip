@@ -1,4 +1,5 @@
 import {Button} from "../../Components/Button/Button";
+import {Case, Color} from "../../Components/Case/Case";
 
 export const Home = () => (
     <div>
@@ -10,5 +11,18 @@ export const Home = () => (
         <Button text={"Info"} color={"#76CEFF"}/>
         <Button text={"Traverser disponible"} color={"#76CEFF"}/>
         <Button text={"Traverser dans 20 min"} color={"#76CEFF"}/>
+        <Case color={Color.Gray}>
+            <Case color={Color.Blue}>
+                <Case color={Color.Lightgray}>
+                    <Case color={Color.Purple}>
+                        <Case color={Color.Lightpurple}>
+                            <Case>
+                                Hello
+                            </Case>
+                        </Case>
+                    </Case>
+                </Case>
+            </Case>
+        </Case>
     </div>
 )

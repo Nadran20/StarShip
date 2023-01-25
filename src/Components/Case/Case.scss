@@ -1,0 +1,35 @@
+
+.case {
+  border-radius: 18px;
+  width: fit-content;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  z-index: auto;
+
+  &--blue {
+    background-color: #48F4FF;
+  }
+
+  &--gray {
+    background-color: #99AFFF;
+  }
+
+  &--lightgray {
+    background-color: #AECAFF;
+  }
+
+  &--lightpurple {
+    background-color: #716FFF;
+  }
+
+  &--purple {
+    background-color: #C96ACB;
+  }
+
+  &--default {
+      background-color: white;
+  }
+
+  .case-content {
+    padding: 20px;
+  }
+}
