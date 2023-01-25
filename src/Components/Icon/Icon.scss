@@ -1,0 +1,21 @@
+
+.icon {
+  //Disable drag and drop
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+  user-drag: none;
+  //Disable selection
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  //Disable context menu
+  -webkit-context-menu: none;
+  -moz-context-menu: none;
+  -ms-context-menu: none;
+  context-menu: none;
+  //Disable text selection
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+}

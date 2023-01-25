@@ -12,11 +12,12 @@ export enum Color {
 interface CaseProps {
     children: React.ReactNode
     color?: Color
+    onClick?: () => void
 }
 
-export const Case = ({children, color}: CaseProps) => {
+export const Case = ({children, color, onClick}: CaseProps) => {
     return (
-        <div className={`case case--${color ?? 'default'}`}>
+        <div className={`case case--${color ?? 'default'}`} onClick={onClick}>
             <div className={'case-content'}>{children}</div>
         </div>
     )
