@@ -13,12 +13,13 @@ interface CaseProps {
     children: React.ReactNode
     color?: Color
     onClick?: () => void
+    className?: string
 }
 
-export const Case = ({children, color, onClick}: CaseProps) => {
+export const Case = ({children, color, onClick, className}: CaseProps) => {
     return (
-        <div className={`case case--${color ?? 'default'}`} onClick={onClick}>
-            <div className={'case-content'}>{children}</div>
+        <div className={`case case--${color ?? 'default'} ${className}`} onClick={onClick}>
+            {children}
         </div>
     )
 }

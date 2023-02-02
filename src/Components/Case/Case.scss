@@ -4,6 +4,7 @@
   width: fit-content;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   z-index: auto;
+  padding: 20px;
 
   &--blue {
     background-color: #48F4FF;
@@ -27,9 +28,5 @@
 
   &--default {
       background-color: white;
-  }
-
-  .case-content {
-    padding: 20px;
   }
 }

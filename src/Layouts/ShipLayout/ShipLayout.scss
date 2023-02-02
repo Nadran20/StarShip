@@ -1,0 +1,14 @@
+.ship-layout {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  height: 100vh;
+}
+
+.action-button {
+  grid-column: 1 / 4;
+  grid-row: 6;
+
+  display: flex;
+  justify-content: space-around;
+}

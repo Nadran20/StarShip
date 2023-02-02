@@ -1,0 +1,82 @@
+.user {
+  grid-column: 8 / 11;
+  grid-row: 1 / 7;
+
+  .user-info {
+    width: fit-content;
+    margin: 20px 10px 30px auto;
+  }
+
+  .user-name {
+    margin: 0 0 10px 0;
+  }
+
+  .user-top {
+    margin: 0;
+  }
+
+  .user-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .user-icon {
+    margin: auto 20px auto 10px;
+  }
+
+  .user-details {
+    width: 400px;
+    max-height: 75vh;
+    margin: 20px 10px 30px auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #748bc7 transparent;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 0;
+    margin: 10px;
+  }
+
+  /* ===== Scrollbar CSS ===== */
+
+  .user-resources {
+    width: auto;
+  }
+
+  .user-resource {
+    display: flex;
+    align-items: center;
+  }
+
+  .user-resource-value {
+    margin-left: 10px;
+  }
+
+  .user-portal {
+    display: flex;
+    align-items: center;
+  }
+
+  .user-portal-icon {
+    margin: 0 10px 0 0;
+  }
+
+  .user-portal-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .user-ships {
+
+  }
+}
+

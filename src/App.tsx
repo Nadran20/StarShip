@@ -3,6 +3,9 @@ import './App.css';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import {Home} from "./Pages/Home/Home";
 import {Page404} from "./Pages/Page404/Page404";
+import {Test} from "./Pages/Test/Test";
+import {Ship} from "./Pages/Ship/Ship";
+import './bootstrap.scss'
 
 const router = createBrowserRouter([
     {
@@ -13,6 +16,14 @@ const router = createBrowserRouter([
     {
         path: "/world/:userId",
         element: <Home/>
+    },
+    {
+        path: "/world/:userId/ship/:shipId",
+        element: <Ship/>
+    },
+    {
+        path: "/test",
+        element: <Test/>
     }
 ]);
 
