@@ -1,4 +1,4 @@
-import { ship } from '../../Types/ship'
+import { ship } from '../../../Types/ship'
 import './Ship.scss'
 import { Icon } from '../../Components/Icon/Icon'
 import { Button } from '../../Components/Button/Button'

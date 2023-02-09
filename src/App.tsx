@@ -1,6 +1,6 @@
 import React from 'react'
 import { Routes } from './Routes/Routes'
-import { Toaster } from './Components/Toaster/Toaster'
+import { Toaster } from './Views/Components/Toaster/Toaster'
 
 import './App.css'
 

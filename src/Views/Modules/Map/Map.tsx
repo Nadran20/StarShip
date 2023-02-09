@@ -1,4 +1,4 @@
-import { Position } from '../../Types/position'
+import { Position } from '../../../Types/position'
 import { Icon } from '../../Components/Icon/Icon'
 import './Map.scss'
 import { Case, Color } from '../../Components/Case/Case'
