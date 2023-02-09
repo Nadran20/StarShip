@@ -7,7 +7,7 @@ interface PopupProps {
     children?: React.ReactNode;
 }
 
-export const Popup = ({open, setOpen, children}: PopupProps) => {
+export const Popup = ({ open, setOpen, children }: PopupProps) => {
 
 	return (
 		<Dialog open={open} onClose={() => setOpen(false)}>{children}</Dialog>

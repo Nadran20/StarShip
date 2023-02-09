@@ -1,9 +1,9 @@
 import React from 'react'
-import {Button} from '../../Components/Button/Button'
-import {Case, Color} from '../../Components/Case/Case'
-import {Icon} from '../../Components/Icon/Icon'
-import {Popup} from '../../Components/Popup/Popup'
-import {Map} from '../../Modules/Map/Map'
+import { Button } from '../../Components/Button/Button'
+import { Case, Color } from '../../Components/Case/Case'
+import { Icon } from '../../Components/Icon/Icon'
+import { Popup } from '../../Components/Popup/Popup'
+import { Map } from '../../Modules/Map/Map'
 
 export const Test = () => {
 	const [open, setOpen] = React.useState(false)

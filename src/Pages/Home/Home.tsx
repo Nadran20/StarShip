@@ -1,6 +1,6 @@
 import React from 'react'
-import {Button} from '../../Components/Button/Button'
-import {toast, ToastContainer} from 'react-toastify'
+import { Button } from '../../Components/Button/Button'
+import { toast, ToastContainer } from 'react-toastify'
 
 export const Home = () => {
 	const notify = () => {

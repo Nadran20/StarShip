@@ -1,15 +1,15 @@
-import {ship} from '../../Types/ship'
+import { ship } from '../../Types/ship'
 import './Ship.scss'
-import {Icon} from '../../Components/Icon/Icon'
-import {Button} from '../../Components/Button/Button'
-import {Case, Color} from '../../Components/Case/Case'
+import { Icon } from '../../Components/Icon/Icon'
+import { Button } from '../../Components/Button/Button'
+import { Case, Color } from '../../Components/Case/Case'
 
 interface ShipProps {
     ship: ship
     selected: boolean
 }
 
-export const Ship = ({ship, selected}: ShipProps) => {
+export const Ship = ({ ship, selected }: ShipProps) => {
 
 	return (
 		selected

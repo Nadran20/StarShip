@@ -1,7 +1,7 @@
-import {Icon} from '../../Components/Icon/Icon'
+import { Icon } from '../../Components/Icon/Icon'
 import './Planet.scss'
-import {Case, Color} from '../../Components/Case/Case'
-import {Title} from '../../Components/Title/Title'
+import { Case, Color } from '../../Components/Case/Case'
+import { Title } from '../../Components/Title/Title'
 
 export const Planet = () => {
 	return (

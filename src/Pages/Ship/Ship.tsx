@@ -1,5 +1,5 @@
 import React from 'react'
-import {ShipLayout} from '../../Layouts/ShipLayout/ShipLayout'
+import { ShipLayout } from '../../Layouts/ShipLayout/ShipLayout'
 
 export const Ship = () => {
 	return (

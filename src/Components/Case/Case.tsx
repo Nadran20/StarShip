@@ -16,7 +16,7 @@ interface CaseProps {
     className?: string
 }
 
-export const Case = ({children, color, onClick, className}: CaseProps) => {
+export const Case = ({ children, color, onClick, className }: CaseProps) => {
 	return (
 		<div className={`case case--${color ?? 'default'} ${className}`} onClick={onClick}>
 			{children}

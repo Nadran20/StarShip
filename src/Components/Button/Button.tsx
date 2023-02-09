@@ -12,11 +12,11 @@ export interface iconProps {
     iconPath: string;
 }
 
-const Icon = ({iconPath}: iconProps) => (
+const Icon = ({ iconPath }: iconProps) => (
 	<img src={iconPath} alt={'icon'} className={'button-icon'}/>
 )
 
-export const Button = ({text, iconPath, color, onClick}: buttonProps) => {
+export const Button = ({ text, iconPath, color, onClick }: buttonProps) => {
 	return (
 		<div>
 			<MIU_BUTTON

@@ -1,14 +1,14 @@
-import {Case, Color} from '../../Components/Case/Case'
-import {Icon} from '../../Components/Icon/Icon'
+import { Case, Color } from '../../Components/Case/Case'
+import { Icon } from '../../Components/Icon/Icon'
 import './User.scss'
-import {Button} from '../../Components/Button/Button'
+import { Button } from '../../Components/Button/Button'
 import React from 'react'
-import {Ship} from '../Ship/Ship'
-import {notifyProps} from '../../Components/Toaster/Toaster'
-import {toast} from 'react-toastify'
+import { Ship } from '../Ship/Ship'
+import { notifyProps } from '../../Components/Toaster/Toaster'
+import { toast } from 'react-toastify'
 
 export const User = () => {
-	const notify = ({message, type}: notifyProps) => {
+	const notify = ({ message, type }: notifyProps) => {
 		switch (type) {
 		case 'success':
 			toast.success(message)

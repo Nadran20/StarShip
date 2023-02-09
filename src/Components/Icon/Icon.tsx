@@ -6,7 +6,7 @@ interface IconProps {
     className?: string;
 }
 
-export const Icon = ({path, size, className}: IconProps) => {
+export const Icon = ({ path, size, className }: IconProps) => {
 	return (
 		<img
 			src={path}
