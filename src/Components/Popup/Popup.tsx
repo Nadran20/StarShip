@@ -1,5 +1,5 @@
-import Dialog from '@mui/material/Dialog';
-import React from "react";
+import Dialog from '@mui/material/Dialog'
+import React from 'react'
 
 interface PopupProps {
     open: boolean;
@@ -9,7 +9,7 @@ interface PopupProps {
 
 export const Popup = ({open, setOpen, children}: PopupProps) => {
 
-    return (
-        <Dialog open={open} onClose={() => setOpen(false)}>{children}</Dialog>
-    )
+	return (
+		<Dialog open={open} onClose={() => setOpen(false)}>{children}</Dialog>
+	)
 }

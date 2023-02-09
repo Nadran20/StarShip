@@ -1,11 +1,11 @@
-import "./Title.scss"
+import './Title.scss'
 
 interface TitleProps {
     title: string;
 }
 
 export const Title = ({title}: TitleProps) => {
-    return (
-        <h1 className={"title"}>{title}</h1>
-    )
+	return (
+		<h1 className={'title'}>{title}</h1>
+	)
 }

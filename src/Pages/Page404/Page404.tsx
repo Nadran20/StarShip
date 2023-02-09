@@ -1,6 +1,6 @@
 
 export const Page404 = () => (
-    <div>
+	<div>
         404 Not Found
-    </div>
+	</div>
 )
