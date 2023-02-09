@@ -4,8 +4,30 @@ import "./User.scss";
 import {Button} from "../../Components/Button/Button";
 import React from "react";
 import {Ship} from "../Ship/Ship";
+import {notifyProps} from "../../Components/Toaster/Toaster";
+import {toast} from "react-toastify";
 
 export const User = () => {
+
+    const notify = ({message, type}: notifyProps) => {
+        switch (type) {
+            case "success":
+                toast.success(message);
+                break;
+            case "error":
+                toast.error(message);
+                break;
+            case "info":
+                toast.info(message);
+                break;
+            case "warning":
+                toast.warn(message);
+                break;
+            default:
+                toast(message);
+        }
+    }
+
     return (
         <div className={"user"}>
             <div className={"user-info"}>
@@ -53,16 +75,24 @@ export const User = () => {
                         <p>Communisme (10, 10)</p>
                     </div>
                     <div className={"user-portal-button"}>
-                        <Button text={"Traverser disponible"} color={"#76CEFF"}/>
+                        <Button
+                            text={"Traverser disponible"}
+                            color={"#76CEFF"}
+                            onClick={() => {
+                                notify({
+                                    message: "Le vaisseau plonge dans le portail direction Communisme (10, 10)",
+                                    type: "info"
+                                })
+                            }}/>
                     </div>
                 </Case>
-                <p>------------ Vaisseaux ------------</p>
+                <p>----------------- Vaisseaux -----------------</p>
                 <div className={"user-ships"}>
                     <Ship
                         ship={
                             {
-                                energie: 50,
-                                maxEnergie: 50,
+                                energie: 9999999,
+                                maxEnergie: 9999999,
                                 heal: 9999999,
                                 maxHeal: 9999999,
                                 name: "Vaisseau 1",
