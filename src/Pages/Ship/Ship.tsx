@@ -1,8 +1,4 @@
-import {Map} from '../../Modules/Map/Map'
 import React from 'react'
-import {Case, Color} from '../../Components/Case/Case'
-import {Icon} from '../../Components/Icon/Icon'
-import {Planet} from '../../Modules/Planet/Planet'
 import {ShipLayout} from '../../Layouts/ShipLayout/ShipLayout'
 
 export const Ship = () => {
